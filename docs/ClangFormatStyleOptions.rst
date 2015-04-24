@@ -1165,6 +1165,9 @@ the configuration (without a prefix: ``Auto``).
        longFunction( // Again a long comment
          arg);
 
+**ArgumentsAndParametersIndentWidth** (``unsigned``)
+  Indent width for arguments and parameters.
+
 **Cpp11BracedListStyle** (``bool``)
   If ``true``, format braced lists as best suited for C++11 braced
   lists.
