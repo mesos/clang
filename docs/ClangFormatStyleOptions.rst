@@ -399,6 +399,9 @@ the configuration (without a prefix: ``Auto``).
 **ContinuationIndentWidth** (``unsigned``)
   Indent width for line continuations.
 
+**ArgumentsAndParametersIndentWidth** (``unsigned``)
+  Indent width for arguments and parameters.
+
 **Cpp11BracedListStyle** (``bool``)
   If ``true``, format braced lists as best suited for C++11 braced
   lists.
