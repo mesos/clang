@@ -1306,7 +1306,7 @@ void ContinuationIndenter::moveStatePastScopeOpener(LineState &State,
     if (Current.ParameterCount > 1)
       NestedBlockIndent = std::max(NestedBlockIndent, State.Column + 1);
   } else {
-    NewIndent = Style.ContinuationIndentWidth +
+    NewIndent = Style.ArgumentsAndParametersIndentWidth +
                 std::max(State.Stack.back().LastSpace,
                          State.Stack.back().StartOfFunctionCall);
 

@@ -389,6 +389,9 @@ struct FormatStyle {
       BTDS_Yes
   };
 
+  /// \brief Indent width for arguments and parameters.
+  unsigned ArgumentsAndParametersIndentWidth;
+
   /// The template declaration breaking style to use.
   BreakTemplateDeclarationsStyle AlwaysBreakTemplateDeclarations;
 
@@ -1735,6 +1738,8 @@ struct FormatStyle {
                R.AlwaysBreakBeforeMultilineStrings &&
            AlwaysBreakTemplateDeclarations ==
                R.AlwaysBreakTemplateDeclarations &&
+           ArgumentsAndParametersIndentWidth ==
+               R.ArgumentsAndParametersIndentWidth &&
            BinPackArguments == R.BinPackArguments &&
            BinPackParameters == R.BinPackParameters &&
            BreakBeforeBinaryOperators == R.BreakBeforeBinaryOperators &&
