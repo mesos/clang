@@ -198,6 +198,9 @@ struct FormatStyle {
   /// declaration.
   bool AlwaysBreakTemplateDeclarations;
 
+  /// \brief Indent width for arguments and parameters.
+  unsigned ArgumentsAndParametersIndentWidth;
+
   /// \brief If ``false``, a function call's arguments will either be all on the
   /// same line or will have one line each.
   bool BinPackArguments;
@@ -653,6 +656,8 @@ struct FormatStyle {
                R.AlwaysBreakBeforeMultilineStrings &&
            AlwaysBreakTemplateDeclarations ==
                R.AlwaysBreakTemplateDeclarations &&
+           ArgumentsAndParametersIndentWidth ==
+               R.ArgumentsAndParametersIndentWidth &&
            BinPackArguments == R.BinPackArguments &&
            BinPackParameters == R.BinPackParameters &&
            BreakBeforeBinaryOperators == R.BreakBeforeBinaryOperators &&

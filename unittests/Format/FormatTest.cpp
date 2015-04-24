@@ -11279,6 +11279,7 @@ TEST_F(FormatTest, MunchSemicolonAfterBlocks) {
 TEST_F(FormatTest, ConfigurableContinuationIndentWidth) {
   FormatStyle TwoIndent = getLLVMStyleWithColumns(15);
   TwoIndent.ContinuationIndentWidth = 2;
+  TwoIndent.ArgumentsAndParametersIndentWidth = 2;
 
   EXPECT_EQ("int i =\n"
             "  longFunction(\n"
@@ -11287,6 +11288,7 @@ TEST_F(FormatTest, ConfigurableContinuationIndentWidth) {
 
   FormatStyle SixIndent = getLLVMStyleWithColumns(20);
   SixIndent.ContinuationIndentWidth = 6;
+  SixIndent.ArgumentsAndParametersIndentWidth = 6;
 
   EXPECT_EQ("int i =\n"
             "      longFunction(\n"
